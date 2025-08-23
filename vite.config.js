@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './index.html', // ensures HTML is processed
+      input: './index.html', // Tells Vite to use index.html as entry
     },
   },
 });
