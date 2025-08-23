@@ -1,0 +1,77 @@
+.navbar-hamburger {
+    display: none;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: rgb(7, 154, 127);
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    background: rgb(28, 28, 28);
+    box-shadow: -2px 0 12px rgba(71, 71, 71, 0.12);
+    z-index: 200;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    animation: slideIn 0.3s;
+}
+
+.sidebar.active {
+    display: flex;
+}
+
+.sidebar-close {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: rgb(7, 154, 127);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.sidebar a,
+.sidebar .dropdown-toggle {
+    margin: 0.7em 0;
+    font-size: 1.1rem;
+    color: #656565;
+    text-decoration: none;
+    font-family: PoppinsBold;
+}
+
+.sidebar .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    min-width: unset;
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        right: -100vw;
+    }
+
+    to {
+        right: 0;
+    }
+}
+

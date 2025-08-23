@@ -1,0 +1,711 @@
+html,
+body {
+    height: 100dvh;
+    min-height: 100dvh;
+    width: 100vw;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* FONT FAMILIES */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('/fonts/SpaceMono-Regular.ttf') format('truetype');
+
+
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+
+/* WEB LAYOUT */
+.Loginbody {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 0.5fr 0fr 1fr 1fr;
+    grid-template-rows: 0.5fr auto;
+    grid-template-areas: "form form form mockup "
+        "footer footer footer footer";
+    min-height: 100dvh;
+    height: 100dvh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* HEADER LAYOUT */
+.logincontainer {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    padding: 0 2% 0 2%;
+    grid-area: form;
+}
+
+.LoginHeader {
+    display: grid;
+
+}
+
+.LoginHeader h1 {
+    font-family: PoppinsBold;
+    font-weight: bolder;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #0c2729, #0eccc2, #436f85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.LoginHeader p {
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.googleSigninCont {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.7fr;
+}
+
+/* SIGNIN BY GOOGLE BTN DESIGN */
+.googleSigninCont {
+    width: 100%;
+    height: 10vh;
+    align-self: flex-end;
+    justify-content: end;
+}
+
+.googleSigninCont button {
+    background-color: #000000;
+    outline: none;
+    border: 1px solid #d7d8da;
+    padding: 3%;
+    border-radius: 30px;
+    width: 70%;
+}
+
+.gsi-material-button-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gsi-material-button-icon i {
+    color: rgb(184, 68, 68);
+}
+
+.gsi-material-button-icon span {
+    color: rgb(184, 68, 68);
+    font-size: 10px;
+}
+
+.gsi-material-button-contents {
+    color: #d7d8da;
+    font-size: 10px;
+}
+
+/* FORM INPUT DESIGN */
+.form {
+    display: grid;
+    grid-template-columns: 0.71fr;
+    align-items: center;
+    /* background-color: #436f85; */
+}
+
+.input-groupContParent {
+    display: grid;
+    gap: 15px;
+}
+
+#inp {
+    border-radius: 0 10px 10px 0;
+    padding: 1% 3% 1% 3%;
+    width: 100%;
+    border: 1px solid #d7d8da;
+    background-color: #000000;
+    color: #d7d8da;
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px 0 0 10px;
+    padding: 1%;
+}
+
+.form label {
+    font-family: Poppins;
+    font-size: 12px;
+    color: #d7d8da;
+}
+
+.altLogin {
+    display: grid;
+
+}
+
+.altLoginFirstCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.remeberMecont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remeberMecont p {
+    color: #d7d8da;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.forgotPasswordCont a {
+    color: rgb(209, 1, 1);
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.forgotPasswordCont a:hover {
+    text-decoration: underline;
+
+}
+
+.loginBtnCont {
+    display: grid;
+    align-items: start;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+
+}
+
+.button {
+    width: 20%;
+    justify-self: center;
+    padding: 1% 0 1% 0;
+    border-radius: 20px;
+    background-color: #014D4e;
+    font-weight: bold;
+    color: #d7d8da;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.altLoginLinksCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.altLoginLinksCont a {
+    text-decoration: none;
+    color: #a5c2fa;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.altLoginLinksCont a:hover {
+    text-decoration: underline;
+}
+
+.altLoginLinksCont p {
+    color: #d7d8da;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Herosection LAYOUT DESIGN */
+
+.mockupcontainer {
+    grid-area: mockup;
+
+}
+
+.mockup {
+    display: grid;
+    grid-template-rows: 0.1fr 0fr;
+    padding: 7% 0 0 0;
+    gap: 10px;
+    height: 70vh;
+}
+
+.mockupImg {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 0.5fr;
+}
+
+.phoneMockup {
+    height: 100%;
+    width: 70%;
+    align-self: center;
+    /* background-color: #436f85; */
+}
+
+.mockupcontainerFooter p {
+    color: #d7d8da;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 10px;
+    align-self: flex-end;
+    text-align: center;
+    padding: 0 18% 0 0;
+}
+
+.mockupcontainerFooter {
+    display: grid;
+}
+
+.appCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+    padding: 0 20% 0 0;
+}
+
+.apple {
+    justify-self: end;
+    width: 30%;
+}
+
+.google {
+    background-color: black;
+    border: 1px solid #c5e5fb;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.google:hover {
+    cursor: pointer;
+
+}
+
+.apple:hover {
+    cursor: pointer;
+
+}
+
+/* FOOTER LAYOUT DESIGN */
+.loginFooter {
+    background-color: rgb(28, 28, 28);
+    grid-area: footer;
+    border-top: 2px solid rgb(148, 148, 148);
+    display: grid;
+    gap: 10px;
+}
+
+.footerLogoCont {
+    padding: 2% 0 0 2%;
+}
+
+/* .footerLogoCont p{
+    font-size: 10px;
+} */
+
+.footerLogo {
+    font-family: 'Space Mono', monospace;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px rgb(196, 194, 194);
+}
+
+.locationInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+}
+
+.locationInfo span {
+    font-family: Poppins;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.locationInfo p {
+    font-family: Poppins;
+    color: #e6eaf2;
+    font-size: 5px;
+}
+
+.SocialiconsCont {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 0fr 0fr;
+    gap: 10px;
+    margin-top: 10%;
+
+}
+
+.SocialiconsCont p {
+    text-align: end;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 37% 0 0;
+
+}
+
+.Socialicons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 25% 0 0;
+    gap: 20px;
+}
+
+.Socialicons i:hover {
+    cursor: pointer;
+}
+
+.policiesCont {
+    display: grid;
+
+}
+
+.policyContTxt {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1% 2% 0 1%;
+
+
+}
+
+.policiesCont p {
+    color: white;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: bold;
+
+
+}
+
+.copyrightTxt {
+    text-align: end;
+}
+
+/* REPONSIVE LAYOUT OF THE PAGE */
+
+@media (max-width:999px) {
+    .mockupImg {
+        height: 100%;
+    }
+
+    .mockupcontainer {
+        max-height: 100%;
+    }
+
+    .phoneMockup {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media (max-width:759px) {
+    .googleSigninCont button {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .googleSigninCont {
+        place-content: center;
+    }
+
+    .mockupImg {
+        place-items: end;
+    }
+}
+
+
+@media (max-width:641px) {
+    .mockupcontainer {
+        display: none;
+
+    }
+
+    .googleSigninCont {
+        justify-self: center;
+
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    .loginBtnCont {
+        justify-content: center;
+    }
+
+    .Loginbody {
+        grid-template-areas: "form form form form"
+            "footer footer footer footer";
+    }
+
+    .appParent {
+        display: grid;
+        /* grid-template-rows: 0.1fr auto; */
+    }
+
+    .appCont2 {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr ; */
+        grid-template-rows: 0fr auto;
+        grid-template-areas: 'appTxt appTxt appTxt appTxt'
+            'firstImg firstImg secondImg secondImg';
+        align-items: center;
+        /* background-color: #0c2729; */
+        padding: 0 0 0 1%;
+
+    }
+
+    .appCont2 p {
+        grid-area: appTxt;
+        margin-bottom: -15%;
+    }
+
+    .apple2 {
+        grid-area: firstImg;
+
+    }
+
+    .google2 {
+        grid-area: secondImg;
+    }
+
+    .loginBtnCont button {
+        width: 100%;
+    }
+}
+
+@media (min-width:641px) {
+    .appParent {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .mockupcontainer {
+        max-height: 100%;
+        gap: 1px;
+    }
+}
+
+@media (max-width:607px) {
+    .LoginHeader p {
+        font-size: 8px;
+    }
+}
+
+
+
+@media (max-width:579px) {
+    #inp::placeholder {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:483px) {
+    .Socialicons {
+        display: grid;
+        padding: 0 45% 0 0;
+        gap: 10px;
+
+
+    }
+
+    .LoginHeader h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:403px) {
+    .googleSigninCont button {
+        width: 100%;
+    }
+
+    .policiesCont p {
+        font-size: 8px;
+    }
+
+    .Socialicons i {
+        font-size: 8px;
+    }
+
+    label {
+        font-size: 5px;
+    }
+
+
+    .footerLogoCont p {
+        font-size: 8px;
+    }
+
+    .footerLogo {
+        font-size: 14px;
+    }
+
+    .SocialiconsCont p {
+        font-size: 8px;
+    }
+
+    .googleSigninCont {
+        justify-self: center;
+    }
+
+    .googleSigninCont {
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:329px) {
+    .policiesCont p {
+        font-size: 5px;
+    }
+
+    .input-group i {
+        font-size: 10px;
+        align-self: center;
+        padding: 3%;
+    }
+
+    .remeberMecont p {
+        font-size: 8px;
+    }
+
+    .remeberMecont input {
+        width: 8%;
+        height: 8%;
+    }
+
+    .forgotPasswordCont a {
+        font-size: 8px;
+    }
+
+    /* .loginBtnCont button {
+        width: 60%;
+        padding: 2% 0 2% 0;
+        font-size: 5px;
+        place-self:center ;
+    } */
+
+    .altLoginLinksCont a {
+        font-size: 8px;
+    }
+
+    .altLoginLinksCont p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:306px) {
+
+    .googleSigninCont button {
+        font-size: 10px;
+
+    }
+}
+
+@media (max-width:243px) {
+    .LoginHeader p {
+        font-size: 5px;
+    }
+
+    /* .loginBtnCont button {
+        font-size: 8px;
+    } */
+
+    .gsi-material-button-icon span {
+        display: none;
+    }
+
+    .gsi-material-button-icon i {
+        font-size: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 213px) {
+    #inp::placeholder {
+        font-size: 6px;
+    }
+}
+
+@media (min-width:1024px) {
+    .LoginHeader h1 {
+        font-size: 3em;
+        background-color: #d1e7e9;
+        margin-bottom: -10px;
+
+    }
+
+
+    /* .loginBtnCont button {
+     font-size: 16px;
+     margin-bottom: -30px;
+   } */
+    .altLogin {
+        /* background-color: #436f85; */
+        margin-bottom: -30px;
+    }
+
+    .mockupcontainerFooter p {
+        font-size: 16px;
+        margin-bottom: -15px;
+    }
+
+    .googleSigninCont {
+        /* background-color: #436f85; */
+        align-items: end;
+    }
+
+    .SocialiconsCont p {
+        font-size: 14px;
+    }
+
+    .Socialicons i {
+        font-size: 18px;
+    }
+
+    .footerLogo {
+        font-size: 30px;
+    }
+
+    .footerLogoCont p {
+        font-size: 16px;
+    }
+}
