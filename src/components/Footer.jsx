@@ -60,7 +60,7 @@ export default function Footer() {
       <div className="policiesCont">
         <div className="appParent">
           <div className="appCont2">
-            <p style={{ textAlign: 'center', fontSize: '14px', width: ' 60%', zIndex:'1', }}>
+            <p style={{ textAlign: 'start', fontSize: '14px', width: ' 60%', zIndex:'1', padding:'2%', }}>
               coming Soon!
             </p>
             <div className="appCont2Img">
