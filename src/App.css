@@ -486,6 +486,7 @@ html,
         display: grid;
         grid-template-areas: 'appTxt appTxt appTxt appTxt'
             'app2Img app2Img app2Img app2Img';
+            gap: 15px;
         
 
     }
