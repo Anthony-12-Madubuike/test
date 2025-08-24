@@ -68,8 +68,8 @@ export default function Signup() {
               />
 
               <TelInput
-                tag="Phone Number"
-                icon="bi bi-telephone"
+                tag="WhatsApp Number"
+                icon="bi bi-whatsapp"
                 inputType="tel"
                 id="phone"
                 class="whatsappNum"
