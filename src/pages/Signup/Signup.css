@@ -194,18 +194,18 @@
     background-color: rgb(8, 35, 30);
     text-align: center;
     border-radius: 10px;
-    width: 60%;
-    font-size: 10px;
+    width: 90%;
+    font-size: 12px;
     justify-self: center;
     color: rgb(216, 245, 250);
     font-weight: 400;
     font-family: Poppins;
     margin-bottom: 0.1em;
-    padding: 2px 0;
+    padding: 3px 3px 3px 3px;
 }
 
 .headerLocation {
-    color: rgb(148, 148, 148);
+    color: rgb(196, 196, 196);
     text-align: center;
     font-size: 10px;
     font-family: Poppins;
@@ -233,6 +233,7 @@
         margin-left: 0.5rem;
     }
 }
+
 /* .form {
     grid-template-columns: 0.71fr;
     gap: 20px;
@@ -278,13 +279,13 @@
 
 .password-inp {
     border-radius: 0 10px 10px 0;
-    padding: 1% 40px 1% 40px;
+    padding: 1% 0 0 3%;
     width: 100%;
     border: 1px solid #d7d8da;
     background-color: #000000;
     color: #d7d8da;
     outline: none;
-    
+
 
 }
 
@@ -336,12 +337,11 @@
     background-color: #111;
 }
 
-.altLogin {
+.altSignup {
     color: white;
-    justify-self: center;
     text-align: center;
     font-size: 10px;
-    font-family:Poppins;
+    font-family: Poppins;
     width: 100%;
     margin-bottom: 1%;
 }
@@ -396,68 +396,60 @@
 
 @media (max-width:904px) {
     .agreementCont label {
-        font-size: 5px;
+        font-size: 8px;
     }
 
 }
-@media (max-width:768px){
-    .navbar-menu{
+
+@media (max-width:768px) {
+    .navbar-menu {
         display: none;
     }
-    /* .navbar-hamburger{
-        display: block;
-        background-color: #00ffcc;
-    } */
+
 }
 
 @media (max-width:500px) {
-     .mockup {
+    .mockup {
         display: none;
     }
-     .content {
+
+    .content {
         grid-template-areas: "form form form form"
-                             "form form form form";
+            "form form form form";
         grid-template-columns: 1fr;
     }
-    .appCont2{
+
+    /* .appCont2 {
         display: grid;
-    }
+    } */
 }
 
 
 @media (max-width:544px) {
     .motoTxt {
-        font-size: 15.2px;
+        font-size: 18px;
     }
 
     .motoTxt2 {
 
-        font-size: 15.6px;
+        font-size: 18.7px;
 
     }
 
     .headerMottoTxt {
-        font-size: 4.5px;
+        font-size: 8px;
 
     }
 
     .headerMottoTxt2 {
-        font-size: 5px;
+        font-size: 8px;
 
     }
 
-    .button {
-        padding: 2.5px 5px;
-        width: 20%;
-        font-size: 5px;
-    }
+    .headerLocation {
 
-    .altLogin a {
-        font-size: 5px;
-    }
-
-    .altLogin {
-        font-size: 5px;
+        font-size: 7px;
+        font-weight: bold;
     }
 
     .SocialiconsCont p {
@@ -476,10 +468,7 @@
         font-size: 2px;
     }
 
-    .headerLocation {
 
-        font-size: 5px;
-    }
 
     .scrollable-form-section label {
         font-size: 8px;
@@ -497,7 +486,7 @@
         width: 10%;
         padding: 0px;
     }
-   
+
 
 
 }
@@ -518,8 +507,7 @@
     .gsi-material-button-content-wrapper {
         gap: 5px;
     }
-   
+
 
 
 }
-

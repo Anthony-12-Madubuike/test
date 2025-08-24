@@ -475,24 +475,26 @@ html,
     .Loginbody {
         grid-template-areas: "form form form form"
             "footer footer footer footer";
-            grid-template-rows: 1fr 0.5fr;
+            grid-template-rows: 1fr 0.3fr;
     }
 
     .appParent {
         display: grid;
-        /* grid-template-rows: 0.1fr auto; */
     }
 
     .appCont2 {
         display: grid;
-        /* grid-template-columns: 1fr 1fr ; */
-        grid-template-rows: 0fr auto;
         grid-template-areas: 'appTxt appTxt appTxt appTxt'
-            'firstImg firstImg secondImg secondImg';
-        align-items: center;
-        /* background-color: #0c2729; */
-        padding: 0 0 0 1%;
+            'app2Img app2Img app2Img app2Img';
+        
 
+    }
+    .appCont2Img{
+        grid-area: app2Img;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 16%;
+        gap: 20px;
     }
 
     .appCont2 p {
@@ -500,17 +502,11 @@ html,
         margin-bottom: -15%;
     }
 
-    .apple2 {
-        grid-area: firstImg;
+   
 
-    }
-
-    .google2 {
-        grid-area: secondImg;
-    }
 
     .loginBtnCont button {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -531,7 +527,7 @@ html,
 
 @media (max-width:607px) {
     .LoginHeader p {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -540,6 +536,9 @@ html,
 @media (max-width:579px) {
     #inp::placeholder {
         font-size: 10px;
+    }
+    .loginBtnCont{
+        padding: 5px 0;
     }
 
 }
@@ -554,7 +553,7 @@ html,
     }
 
     .LoginHeader h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -609,33 +608,22 @@ html,
         padding: 3%;
     }
 
-    .remeberMecont p {
-        font-size: 8px;
-    }
+   
 
     .remeberMecont input {
         width: 8%;
         height: 8%;
     }
 
-    .forgotPasswordCont a {
-        font-size: 8px;
-    }
-
-    /* .loginBtnCont button {
-        width: 60%;
-        padding: 2% 0 2% 0;
-        font-size: 5px;
-        place-self:center ;
-    } */
-
-    .altLoginLinksCont a {
-        font-size: 8px;
-    }
+ 
 
     .altLoginLinksCont p {
         font-size: 8px;
     }
+    .form{
+        justify-content: start;
+    }
+  
 }
 
 @media (max-width:306px) {
@@ -648,12 +636,10 @@ html,
 
 @media (max-width:243px) {
     .LoginHeader p {
-        font-size: 5px;
+        font-size: 8px;
     }
 
-    /* .loginBtnCont button {
-        font-size: 8px;
-    } */
+   
 
     .gsi-material-button-icon span {
         display: none;
@@ -680,12 +666,8 @@ html,
     }
 
 
-    /* .loginBtnCont button {
-     font-size: 16px;
-     margin-bottom: -30px;
-   } */
+  
     .altLogin {
-        /* background-color: #436f85; */
         margin-bottom: -30px;
     }
 
@@ -695,7 +677,6 @@ html,
     }
 
     .googleSigninCont {
-        /* background-color: #436f85; */
         align-items: end;
     }
 

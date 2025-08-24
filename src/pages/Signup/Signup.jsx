@@ -104,9 +104,9 @@ export default function Signup() {
               marginTop: "18px,",
             }}
           >
-            <Btn btnTxt="Signup"/>
+            <Btn class="button" btnTxt="Signup" />
           </div>
-          <p className="altLogin">
+          <p className="altSignup">
             Already registered?{" "}
             <Link
               to="/"

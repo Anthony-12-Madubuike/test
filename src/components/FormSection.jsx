@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; 
-import { InputComponent, TelInput}  from "./InputComponent"
+import { InputComponent, TelInput, PasswordInput}  from "./InputComponent"
 import {GoogleBtn, Btn} from "./Btn";
 export default function FormSection() {
 
@@ -22,11 +22,8 @@ export default function FormSection() {
             icon="bi bi-at"
             input-holder="Enter your username address"
           />
-          <InputComponent
-            inputType="password"
-            tag="Password"
-            icon="bi bi-lock"
-            input-holder="Enter your password"
+          <PasswordInput
+          tag="Password"
           />
         </div>
         <div className="altLogin">
@@ -41,7 +38,9 @@ export default function FormSection() {
           </div>
 
           <div className="loginBtnCont">
-            <Btn btnTxt="Login" />
+            <Btn 
+            class="button"
+            btnTxt="Login" />
             <div className="altLoginLinksCont">
               <p>Don't have an account?</p>
               <Link

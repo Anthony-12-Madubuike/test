@@ -1,5 +1,5 @@
-// import googleIcon from '../assets/googleIcon.svg'
-// import appleIcon from '../assets/appleIcon.svg'
+import googleIcon from '../assets/googleIcon.svg'
+import appleIcon from '../assets/appleIcon.svg'
 
 
 export default function Footer() {
@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="locationInfo">
         <div className="footerLogoCont">
           <div className="footerLogo">
-            SWITCH <br/>
-            <span style={{fontSize: '14px', fontWeight:'lighter'}}>your everyday App</span>
+            SWITCH <br />
+            <span style={{ fontSize: '14px', fontWeight: 'lighter' }}>your everyday App</span>
           </div>
 
           <p>
@@ -24,35 +24,35 @@ export default function Footer() {
             <i
               className="bi bi-twitter"
               style={{
-                 color:'white',
-                  backgroundColor: 'black',
-                  padding: '0.5%',
-                  borderRadius: '50%',
+                color: 'white',
+                backgroundColor: 'black',
+                padding: '0.5%',
+                borderRadius: '50%',
               }}
-                 
-                
+
+
             ></i>
             <i className="bi bi-instagram"></i>
             <i
               className="bi bi-tiktok"
               style={{
-                color:'white',
-                  backgroundColor: 'black',
-                  padding: '0.5%',
-                  borderRadius: '50%',
+                color: 'white',
+                backgroundColor: 'black',
+                padding: '0.5%',
+                borderRadius: '50%',
               }}
-                  
-                
+
+
             ></i>
             <i
               className="bi bi-facebook"
               style={{
-                 color:'white',
-                  backgroundColor: 'black',
-                  padding: '0.5%',
-                  borderRadius: '50%',
+                color: 'white',
+                backgroundColor: 'black',
+                padding: '0.5%',
+                borderRadius: '50%',
               }}
-                 
+
             ></i>
           </div>
         </div>
@@ -60,36 +60,41 @@ export default function Footer() {
       <div className="policiesCont">
         <div className="appParent">
           <div className="appCont2">
-            <p style={{textAlign:'center', fontSize: '14px', width:' 60%'}}>
+            <p style={{ textAlign: 'center', fontSize: '14px', width: ' 60%', zIndex:'1', }}>
               coming Soon!
             </p>
-            <img
-              // src={appleIcon}
-              alt="Download on the App Store"
-              width="30%"
-              className="apple2"
-            />
+            <div className="appCont2Img">
+              <img
+                src={appleIcon}
+                alt="Download on the App Store"
+                className="apple2"
+                style={{
+                  width:'50px'
+                }}
+              />
 
-            <img
-              // src={googleIcon}
-              alt="Get it on Google Play"
-              style={{
+              <img
+                src={googleIcon}
+                alt="Get it on Google Play"
+                style={{
                   backgroundColor: 'black',
                   border: '1px solid rgb(197, 229, 251)',
-                  color:'white',
-                  borderRadius:'20px',
-                  width: '30%',
-              }}
-                  
-              className="google2"
-            />
+                  color: 'white',
+                  borderRadius: '50px',
+                  width: '15%',
+                  height:'30%',
+                }}
+
+                className="google2"
+              />
+            </div>
+            </div>
+          </div>
+          <div className="policyContTxt">
+            <p className="policiesTxt">Terms and Policies Privacy Notice</p>
+            <p className="copyrightTxt">&copy; Copyright Switch 2021 - 2025</p>
           </div>
         </div>
-        <div className="policyContTxt">
-          <p className="policiesTxt">Terms and Policies Privacy Notice</p>
-          <p className="copyrightTxt">&copy; Copyright Switch 2021 - 2025</p>
-        </div>
-      </div>
     </footer>
   );
 }

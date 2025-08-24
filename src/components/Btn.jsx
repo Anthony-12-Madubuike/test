@@ -18,7 +18,7 @@ export  function GoogleBtn(){
 
 export function Btn(props){
     return(
-            <button className="button">{props.btnTxt}</button>
+            <button className={props.class}>{props.btnTxt}</button>
 
     )
 }
