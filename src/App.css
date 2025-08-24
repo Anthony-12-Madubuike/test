@@ -462,8 +462,10 @@ html,
 
     }
 
+
     .form {
         justify-content: center;
+       
     }
 
     .loginBtnCont {
@@ -473,6 +475,7 @@ html,
     .Loginbody {
         grid-template-areas: "form form form form"
             "footer footer footer footer";
+            grid-template-rows: 1fr 0.5fr;
     }
 
     .appParent {
